@@ -1,0 +1,18 @@
+<main>
+    <div style="margin-bottom: 2em; padding: 2em auto; text-align:center; display:block;">
+        {{#if fileLink}}
+            <p style="margin: 1em auto;">file uploaded!</p>
+            <a href="{{fileLink}}" style="text-align: center; text-decoration: none; padding: 1em 2em;">
+                {{fileLink}}
+            </a>
+        {{/if}}
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data" 
+    style="display: grid; grid-template-columns:repeat(2, 1fr); gap: 2em; max-width: 500px; margin: 0 auto;">
+        <label for="file">file</label>
+        <input type="file" name="file" />
+        <label for="password">password</label>
+        <input type="password" name="password">
+        <input type="submit" value="share" style="grid-column: span 2;">
+    </form>
+</main>
