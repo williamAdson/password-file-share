@@ -7,7 +7,7 @@
 
 ## Use
 
-> make sure you have <strongNodeJs</strong> installed on your system.
+> make sure you have <strong>NodeJs</strong> installed on your system.
 
 ```
   1. node v19.1.0 or greater 
